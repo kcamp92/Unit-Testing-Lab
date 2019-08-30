@@ -13,6 +13,12 @@
 		0BF6D3FF23199E97000A8ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6D3FE23199E97000A8ACD /* Assets.xcassets */; };
 		0BF6D40223199E97000A8ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6D40023199E97000A8ACD /* LaunchScreen.storyboard */; };
 		0BF6D40D23199E97000A8ACD /* Unit_Testing_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D40C23199E97000A8ACD /* Unit_Testing_LabTests.swift */; };
+		0BF6D41E2319B78F000A8ACD /* JokeAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6D41D2319B78E000A8ACD /* JokeAPI.json */; };
+		0BF6D4202319B7E3000A8ACD /* StarWarsAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6D41F2319B7E3000A8ACD /* StarWarsAPI.json */; };
+		0BF6D4222319B821000A8ACD /* TriviaAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6D4212319B821000A8ACD /* TriviaAPI.json */; };
+		0BF6D4242319B9EF000A8ACD /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D4232319B9EF000A8ACD /* JokeModel.swift */; };
+		0BF6D4262319BAC2000A8ACD /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D4252319BAC2000A8ACD /* StarWarsModel.swift */; };
+		0BF6D4282319BAD8000A8ACD /* TriviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D4272319BAD8000A8ACD /* TriviaModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		0BF6D40823199E97000A8ACD /* Unit-Testing-LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit-Testing-LabTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF6D40C23199E97000A8ACD /* Unit_Testing_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_Testing_LabTests.swift; sourceTree = "<group>"; };
 		0BF6D40E23199E97000A8ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BF6D41D2319B78E000A8ACD /* JokeAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JokeAPI.json; sourceTree = "<group>"; };
+		0BF6D41F2319B7E3000A8ACD /* StarWarsAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StarWarsAPI.json; sourceTree = "<group>"; };
+		0BF6D4212319B821000A8ACD /* TriviaAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TriviaAPI.json; sourceTree = "<group>"; };
+		0BF6D4232319B9EF000A8ACD /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		0BF6D4252319BAC2000A8ACD /* StarWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
+		0BF6D4272319BAD8000A8ACD /* TriviaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,10 @@
 		0BF6D3EB23199E95000A8ACD = {
 			isa = PBXGroup;
 			children = (
+				0BF6D41A2319B632000A8ACD /* JSON-API's */,
+				0BF6D4192319B60F000A8ACD /* API-Models */,
+				0BF6D4182319B606000A8ACD /* DVC */,
+				0BF6D4172319B5EC000A8ACD /* View Controllers */,
 				0BF6D3F623199E95000A8ACD /* Unit-Testing-Lab */,
 				0BF6D40B23199E97000A8ACD /* Unit-Testing-LabTests */,
 				0BF6D3F523199E95000A8ACD /* Products */,
@@ -94,6 +110,40 @@
 				0BF6D40E23199E97000A8ACD /* Info.plist */,
 			);
 			path = "Unit-Testing-LabTests";
+			sourceTree = "<group>";
+		};
+		0BF6D4172319B5EC000A8ACD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0BF6D4182319B606000A8ACD /* DVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DVC;
+			sourceTree = "<group>";
+		};
+		0BF6D4192319B60F000A8ACD /* API-Models */ = {
+			isa = PBXGroup;
+			children = (
+				0BF6D4232319B9EF000A8ACD /* JokeModel.swift */,
+				0BF6D4252319BAC2000A8ACD /* StarWarsModel.swift */,
+				0BF6D4272319BAD8000A8ACD /* TriviaModel.swift */,
+			);
+			path = "API-Models";
+			sourceTree = "<group>";
+		};
+		0BF6D41A2319B632000A8ACD /* JSON-API's */ = {
+			isa = PBXGroup;
+			children = (
+				0BF6D4212319B821000A8ACD /* TriviaAPI.json */,
+				0BF6D41F2319B7E3000A8ACD /* StarWarsAPI.json */,
+				0BF6D41D2319B78E000A8ACD /* JokeAPI.json */,
+			);
+			path = "JSON-API's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +230,9 @@
 				0BF6D40223199E97000A8ACD /* LaunchScreen.storyboard in Resources */,
 				0BF6D3FF23199E97000A8ACD /* Assets.xcassets in Resources */,
 				0BF6D3FD23199E95000A8ACD /* Main.storyboard in Resources */,
+				0BF6D4222319B821000A8ACD /* TriviaAPI.json in Resources */,
+				0BF6D41E2319B78F000A8ACD /* JokeAPI.json in Resources */,
+				0BF6D4202319B7E3000A8ACD /* StarWarsAPI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF6D3FA23199E95000A8ACD /* ViewController.swift in Sources */,
+				0BF6D4282319BAD8000A8ACD /* TriviaModel.swift in Sources */,
 				0BF6D3F823199E95000A8ACD /* AppDelegate.swift in Sources */,
+				0BF6D4262319BAC2000A8ACD /* StarWarsModel.swift in Sources */,
+				0BF6D4242319B9EF000A8ACD /* JokeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

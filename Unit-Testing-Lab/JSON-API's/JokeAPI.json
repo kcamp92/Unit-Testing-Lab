@@ -1,0 +1,62 @@
+[
+    {
+        "id": 73,
+        "type": "programming",
+        "setup": "The punchline often arrives before the set-up.",
+        "punchline": "Do you know the problem with UDP jokes?"
+    },
+    {
+        "id": 60,
+        "type": "programming",
+        "setup": "A user interface is like a joke.",
+        "punchline": "If you have to explain it then it is not that good."
+    },
+    {
+        "id": 16,
+        "type": "programming",
+        "setup": "What's the object-oriented way to become wealthy?",
+        "punchline": "Inheritance"
+    },
+    {
+        "id": 28,
+        "type": "programming",
+        "setup": "To understand what recursion is...",
+        "punchline": "You must first understand what recursion is"
+    },
+    {
+        "id": 35,
+        "type": "programming",
+        "setup": "Why do Java programmers wear glasses?",
+        "punchline": "Because they don't C#"
+    },
+    {
+        "id": 72,
+        "type": "programming",
+        "setup": "I was gonna tell you a joke about UDP...",
+        "punchline": "...but you might not get it."
+    },
+    {
+        "id": 17,
+        "type": "programming",
+        "setup": "Where do programmers like to hangout?",
+        "punchline": "The Foo Bar."
+    },
+    {
+        "id": 33,
+        "type": "programming",
+        "setup": "Which song would an exception sing?",
+        "punchline": "Can't catch me - Avicii"
+    },
+    {
+        "id": 23,
+        "type": "programming",
+        "setup": "Why do programmers always mix up Halloween and Christmas?",
+        "punchline": "Because Oct 31 == Dec 25"
+    },
+    {
+        "id": 26,
+        "type": "programming",
+        "setup": "If you put a million monkeys at a million keyboards, one of them will eventually write a Java program",
+        "punchline": "the rest of them will write Perl"
+    }
+]

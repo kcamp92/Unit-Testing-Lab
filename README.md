@@ -11,6 +11,7 @@ Parsing Data
 
 Below are the endpoints to hit. For each endpoint, select a search query and copy and paste the JSON into Xcode. Make a new file called customname.json and save it at the top level of your project. For each JSON file, create a model that conforms to Codable, then build your Table View and associated Detail View Controller.
 Add unit tests for each of the models that you build
+
 Endpoint One
 
 Official Joke API
