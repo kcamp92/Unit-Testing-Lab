@@ -7,3 +7,29 @@
 //
 
 import Foundation
+
+struct StarWarsData: Codable {
+    
+    enum JSONError: Error {
+        case decodingError(Error)
+    }
+    
+    let results: [titleInfo]
+    
+    static func getStarWarsData(data: Data) throws ->
+        [titleInfo] {
+            do {
+                let starWarsData = try JSONDecoder().decode(StarWarsData.self, from: data)
+                
+                return starWarsData.results
+            }catch{
+                throw JSONError.decodingError(error)
+            }
+    }
+    
+}
+
+struct titleInfo: Codable {
+    let queston: String
+    let opening_crawl: String
+}

@@ -19,6 +19,7 @@
 		0BF6D4242319B9EF000A8ACD /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D4232319B9EF000A8ACD /* JokeModel.swift */; };
 		0BF6D4262319BAC2000A8ACD /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D4252319BAC2000A8ACD /* StarWarsModel.swift */; };
 		0BF6D4282319BAD8000A8ACD /* TriviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D4272319BAD8000A8ACD /* TriviaModel.swift */; };
+		0BF6D45C231F1541000A8ACD /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D45B231F1541000A8ACD /* JokesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		0BF6D4232319B9EF000A8ACD /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
 		0BF6D4252319BAC2000A8ACD /* StarWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
 		0BF6D4272319BAD8000A8ACD /* TriviaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaModel.swift; sourceTree = "<group>"; };
+		0BF6D45B231F1541000A8ACD /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JokesViewController.swift; path = "../Unit-Testing-Lab/JokesViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		0BF6D4172319B5EC000A8ACD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0BF6D45B231F1541000A8ACD /* JokesViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -139,9 +142,9 @@
 		0BF6D41A2319B632000A8ACD /* JSON-API's */ = {
 			isa = PBXGroup;
 			children = (
-				0BF6D4212319B821000A8ACD /* TriviaAPI.json */,
-				0BF6D41F2319B7E3000A8ACD /* StarWarsAPI.json */,
 				0BF6D41D2319B78E000A8ACD /* JokeAPI.json */,
+				0BF6D41F2319B7E3000A8ACD /* StarWarsAPI.json */,
+				0BF6D4212319B821000A8ACD /* TriviaAPI.json */,
 			);
 			path = "JSON-API's";
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF6D3FA23199E95000A8ACD /* ViewController.swift in Sources */,
+				0BF6D45C231F1541000A8ACD /* JokesViewController.swift in Sources */,
 				0BF6D4282319BAD8000A8ACD /* TriviaModel.swift in Sources */,
 				0BF6D3F823199E95000A8ACD /* AppDelegate.swift in Sources */,
 				0BF6D4262319BAC2000A8ACD /* StarWarsModel.swift in Sources */,
