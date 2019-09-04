@@ -9,19 +9,19 @@
 import Foundation
 
 struct JokeData: Codable {
+    let setup: String
+    let punchline: String
     
     enum JSONError: Error {
         case decodingError(Error)
     }
     
-    let setup: [setupInfo]
-    
     static func getJokeData(data: Data) throws ->
-        [setupInfo] {
+        [JokeData] {
             do {
-                let jokeData = try JSONDecoder().decode(JokeData.self, from: data)
+                let jokeData = try JSONDecoder().decode([JokeData].self, from: data)
                 
-                return jokeData.setup
+                return jokeData
             }catch{
                 throw JSONError.decodingError(error)
             }
@@ -29,9 +29,6 @@ struct JokeData: Codable {
     
 }
 
-struct setupInfo: Codable {
-    let setup: String
-    let punchline: String
-}
+
 
 

@@ -20,6 +20,7 @@
 		0BF6D4262319BAC2000A8ACD /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D4252319BAC2000A8ACD /* StarWarsModel.swift */; };
 		0BF6D4282319BAD8000A8ACD /* TriviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D4272319BAD8000A8ACD /* TriviaModel.swift */; };
 		0BF6D45C231F1541000A8ACD /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D45B231F1541000A8ACD /* JokesViewController.swift */; };
+		0BF6D45E23205403000A8ACD /* jokesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D45D23205403000A8ACD /* jokesDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		0BF6D4252319BAC2000A8ACD /* StarWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
 		0BF6D4272319BAD8000A8ACD /* TriviaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaModel.swift; sourceTree = "<group>"; };
 		0BF6D45B231F1541000A8ACD /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JokesViewController.swift; path = "../Unit-Testing-Lab/JokesViewController.swift"; sourceTree = "<group>"; };
+		0BF6D45D23205403000A8ACD /* jokesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jokesDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		0BF6D4182319B606000A8ACD /* DVC */ = {
 			isa = PBXGroup;
 			children = (
+				0BF6D45D23205403000A8ACD /* jokesDetailViewController.swift */,
 			);
 			path = DVC;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF6D45E23205403000A8ACD /* jokesDetailViewController.swift in Sources */,
 				0BF6D3FA23199E95000A8ACD /* ViewController.swift in Sources */,
 				0BF6D45C231F1541000A8ACD /* JokesViewController.swift in Sources */,
 				0BF6D4282319BAD8000A8ACD /* TriviaModel.swift in Sources */,
