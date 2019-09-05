@@ -12,7 +12,7 @@ class StarWarsViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var starWarsTableView: UITableView!
     
-    var starWarsInfo = [StarWarsData](){
+    var starWarsInfo = [titleInfo](){
         didSet {
             starWarsTableView.reloadData()
         }
@@ -41,7 +41,7 @@ class StarWarsViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = starWarsTableView.dequeueReusableCell(withIdentifier: "warCell", for: indexPath)
         let movieInfo = starWarsInfo[indexPath.row]
-        cell.textLabel?.text = "\(movieInfo.results)"
+        cell.textLabel?.text = movieInfo.title
         return cell
     }  
     
@@ -51,7 +51,7 @@ class StarWarsViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         loadStarWarsData()
         starWarsTableView.dataSource = self
-        //  StarWarsTableView.delegate = self
+        starWarsTableView.delegate = self
     }
     
     
@@ -60,8 +60,7 @@ class StarWarsViewController: UIViewController, UITableViewDataSource {
 extension StarWarsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let storyBoard = storyboard?.instantiateViewController(withIdentifier: "starWarsDetailViewController") as? starWarsDetailViewController {
-            storyBoard.allJokeInfo = jokeInfo[indexPath.row]
-            
+            storyBoard.allStarWarsInfo = starWarsInfo[indexPath.row]
             navigationController?.pushViewController(storyBoard, animated: true)
             
         }

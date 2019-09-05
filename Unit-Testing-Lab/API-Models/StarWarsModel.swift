@@ -26,10 +26,18 @@ struct StarWarsData: Codable {
                 throw JSONError.decodingError(error)
             }
     }
-    
 }
 
+
 struct titleInfo: Codable {
-    let movie: String
-    let opening_crawl: String
+    
+    let title: String
+    let openingCrawl: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case title
+        case openingCrawl = "opening_crawl"
+    }
 }
+
+

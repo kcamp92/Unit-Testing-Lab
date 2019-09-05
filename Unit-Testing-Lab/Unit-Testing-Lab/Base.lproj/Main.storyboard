@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="-1393" y="-207"/>
         </scene>
-        <!--View Controller-->
+        <!--Trivia View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Unit_Testing_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TriviaViewController" id="BYZ-38-t0r" customClass="TriviaViewController" customModule="Unit_Testing_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +157,7 @@
                                 <rect key="frame" x="0.0" y="2.5" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ZZ4-HE-Jgy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="triviaCell" id="ZZ4-HE-Jgy">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZZ4-HE-Jgy" id="I6J-cJ-ZWc">
@@ -178,25 +178,47 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="7uk-hx-4v9"/>
+                    <connections>
+                        <outlet property="TriviaTableView" destination="EMw-pM-eJo" id="IWH-te-cY1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="435" y="867"/>
         </scene>
-        <!--View Controller-->
+        <!--Trivia Detail View Controller-->
         <scene sceneID="n0R-b8-ax5">
             <objects>
-                <viewController id="xKW-Pl-r4a" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="triviaDetailViewController" id="xKW-Pl-r4a" customClass="triviaDetailViewController" customModule="Unit_Testing_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nh4-9o-tNf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbI-rZ-CQA">
+                                <rect key="frame" x="91" y="134" width="236" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choices" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1r-x6-rZg">
+                                <rect key="frame" x="31" y="405" width="341" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jG1-Ya-6Iq"/>
                     </view>
+                    <connections>
+                        <outlet property="optionsLabel" destination="u1r-x6-rZg" id="p05-h9-3sz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilO-rY-oDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341" y="867"/>
+            <point key="canvasLocation" x="1340.5797101449277" y="866.51785714285711"/>
         </scene>
         <!--Star Wars-->
         <scene sceneID="9fY-bo-gcN">
@@ -263,15 +285,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SRV-0U-kzB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SRV-0U-kzB">
                                 <rect key="frame" x="46" y="188" width="327" height="280"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sib-au-Tdn">
-                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -279,14 +295,6 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="SRV-0U-kzB" firstAttribute="centerX" secondItem="M7i-5T-eHV" secondAttribute="centerX" id="7ve-Be-ZgJ"/>
-                            <constraint firstItem="sib-au-Tdn" firstAttribute="centerY" secondItem="M7i-5T-eHV" secondAttribute="centerY" id="GSa-LE-mgD"/>
-                            <constraint firstItem="sib-au-Tdn" firstAttribute="width" secondItem="7tl-ua-YMa" secondAttribute="width" id="LIV-xL-wWv"/>
-                            <constraint firstItem="SRV-0U-kzB" firstAttribute="centerY" secondItem="M7i-5T-eHV" secondAttribute="centerY" id="OtQ-ud-go8"/>
-                            <constraint firstItem="sib-au-Tdn" firstAttribute="height" secondItem="7tl-ua-YMa" secondAttribute="height" id="lzV-j6-0AQ"/>
-                            <constraint firstItem="sib-au-Tdn" firstAttribute="centerX" secondItem="M7i-5T-eHV" secondAttribute="centerX" id="z7V-LK-7Di"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="M7i-5T-eHV"/>
                     </view>
                 </viewController>

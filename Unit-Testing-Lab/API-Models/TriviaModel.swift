@@ -32,6 +32,12 @@ struct TriviaData: Codable {
 struct resultsInfo: Codable {
     let name: String
     let correctAnswer: String
-    let incorrect_answers: [String]
+    let incorrectAnswers: [String]
+    
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case correctAnswer
+        case incorrectAnswers = "incorrect_answers"
+    }
 }
 

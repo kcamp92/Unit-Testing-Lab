@@ -9,22 +9,19 @@
 import UIKit
 
 class starWarsDetailViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var allStarWarsInfo: titleInfo!
+    
+    @IBOutlet weak var openingCrawlTextView: UITextView!
+    
+    func setUpLabel() {
+        openingCrawlTextView.text = allStarWarsInfo.openingCrawl
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            setUpLabel()
+        }
+        
     }
-    */
 
-}
