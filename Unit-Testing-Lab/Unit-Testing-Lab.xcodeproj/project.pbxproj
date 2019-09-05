@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BEF6982232166EF00E86319 /* starWarsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEF6981232166EF00E86319 /* starWarsDetailViewController.swift */; };
 		0BF6D3F823199E95000A8ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D3F723199E95000A8ACD /* AppDelegate.swift */; };
-		0BF6D3FA23199E95000A8ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D3F923199E95000A8ACD /* ViewController.swift */; };
+		0BF6D3FA23199E95000A8ACD /* StarWarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6D3F923199E95000A8ACD /* StarWarsViewController.swift */; };
 		0BF6D3FD23199E95000A8ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6D3FB23199E95000A8ACD /* Main.storyboard */; };
 		0BF6D3FF23199E97000A8ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6D3FE23199E97000A8ACD /* Assets.xcassets */; };
 		0BF6D40223199E97000A8ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6D40023199E97000A8ACD /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BEF6981232166EF00E86319 /* starWarsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starWarsDetailViewController.swift; sourceTree = "<group>"; };
 		0BF6D3F423199E95000A8ACD /* Unit-Testing-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit-Testing-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF6D3F723199E95000A8ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BF6D3F923199E95000A8ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BF6D3F923199E95000A8ACD /* StarWarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsViewController.swift; sourceTree = "<group>"; };
 		0BF6D3FC23199E95000A8ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BF6D3FE23199E97000A8ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BF6D40123199E97000A8ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				0BF6D3F723199E95000A8ACD /* AppDelegate.swift */,
-				0BF6D3F923199E95000A8ACD /* ViewController.swift */,
 				0BF6D3FB23199E95000A8ACD /* Main.storyboard */,
 				0BF6D3FE23199E97000A8ACD /* Assets.xcassets */,
 				0BF6D40023199E97000A8ACD /* LaunchScreen.storyboard */,
@@ -119,6 +120,7 @@
 		0BF6D4172319B5EC000A8ACD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0BF6D3F923199E95000A8ACD /* StarWarsViewController.swift */,
 				0BF6D45B231F1541000A8ACD /* JokesViewController.swift */,
 			);
 			path = "View Controllers";
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				0BF6D45D23205403000A8ACD /* jokesDetailViewController.swift */,
+				0BEF6981232166EF00E86319 /* starWarsDetailViewController.swift */,
 			);
 			path = DVC;
 			sourceTree = "<group>";
@@ -257,11 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF6D45E23205403000A8ACD /* jokesDetailViewController.swift in Sources */,
-				0BF6D3FA23199E95000A8ACD /* ViewController.swift in Sources */,
+				0BF6D3FA23199E95000A8ACD /* StarWarsViewController.swift in Sources */,
 				0BF6D45C231F1541000A8ACD /* JokesViewController.swift in Sources */,
 				0BF6D4282319BAD8000A8ACD /* TriviaModel.swift in Sources */,
 				0BF6D3F823199E95000A8ACD /* AppDelegate.swift in Sources */,
 				0BF6D4262319BAC2000A8ACD /* StarWarsModel.swift in Sources */,
+				0BEF6982232166EF00E86319 /* starWarsDetailViewController.swift in Sources */,
 				0BF6D4242319B9EF000A8ACD /* JokeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

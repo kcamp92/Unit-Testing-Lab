@@ -30,6 +30,6 @@ struct StarWarsData: Codable {
 }
 
 struct titleInfo: Codable {
-    let queston: String
+    let movie: String
     let opening_crawl: String
 }
