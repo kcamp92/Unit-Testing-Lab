@@ -17,6 +17,7 @@ class TriviaViewController: UIViewController {
     }
     
     @IBOutlet weak var TriviaTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadTriviaData()
@@ -47,7 +48,7 @@ extension TriviaViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TriviaTableView.dequeueReusableCell(withIdentifier: "triviaCell", for: indexPath)
         let setupInfo = triviaInfo[indexPath.row]
-        cell.textLabel?.text = setupInfo.name
+        cell.textLabel?.text = setupInfo.question.removingPercentEncoding
         return cell
     }
 
