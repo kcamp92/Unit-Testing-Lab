@@ -9,7 +9,7 @@
 import UIKit
 
 class triviaDetailViewController: UIViewController {
-    var allTriviaInfo: TriviaData!
+    var allTriviaInfo: resultsInfo!
     
     @IBOutlet weak var optionsLabel: UILabel!
     

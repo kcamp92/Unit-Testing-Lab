@@ -50,8 +50,7 @@ extension TriviaViewController: UITableViewDataSource {
         cell.textLabel?.text = setupInfo.name
         return cell
     }
-    
-    
+
     
 }
 extension TriviaViewController: UITableViewDelegate {
